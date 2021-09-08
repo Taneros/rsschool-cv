@@ -1,0 +1,6 @@
+@import url("../css/nullstyle.css");
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
