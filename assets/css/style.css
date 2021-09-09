@@ -1,6 +1,72 @@
 @import url("../css/nullstyle.css");
 
+:root {
+  --font-size: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-size: var(--font-size);
+	line-height: 1.2;
+	font-weight: normal;
+}
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+  background-color: grey;
+}
+
+._container {
+  /* max-width: 900px; */
+  margin: 0 auto;
+  background-color: lavender;
+  padding: 0 15px;
+}
+
+/* ------HEADER------- */
+
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+.header__container {
+  display: flex;
+  min-height: 90px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__name {
+font-weight: 700;
+font-size: 1.5rem;
+letter-spacing: 0.1rem;
+
+}
+
+.header__menu {
+
+}
+
+.menu {
+}
+.menu__list {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+
+}
+.menu__item {
+  /* margin: 0 0 0 20px; */
+}
+.menu__link {
 }
