@@ -49,9 +49,102 @@
         </div>
       </header>
       <main>
-        <h1 class="ceo-hidden">Renat Fatkhullin - Junior Front-End Developer CV</h1>
+        <h1 class="ceo-hidden">Renat Fatkhullin - Front-End Developer CV</h1>
         <div class="main__container _container">
+          <section class="main__about-me">
+            <div class="section-container">
+              <div class="about__me-card">
+                <div class="card__photo">
+                  <img src="assets/img/profile_photo.jpg" alt="Renat's Portrait">
+                </div>
+                <h2 class="card__name">RENAT FATKHULLIN</h2>
+                <p class="card__job">Front-End Developer</p>
+                <ul class="card__contacts">
+                  <li><i class="fa fa-phone"></i>+7 996 901 15 53</li>
+                  <li><i class="fa fa-envelope-open-o"></i>renat.fatkhullin@hotmail.com</li>
+                  <!-- <li><i class="fa fa-code-fork"></i>GitHub.com/Taneros</li> -->
+                  <li><i class="fa fa-map-marker	"></i>Kazan</li>
+                </ul>
+              </div>
+              <div class="about__me-summary">
+                <h2><i class="fa fa-address-card-o"></i>Profile Summary</h2>
+                <p>I am a multilingual engineer and educator, with international work experience.<br>At the moment, I am working
+                  towards completing
+                  RS School course «JavaScript/Front-end» and getting employed at EPAM for the position of Junior Front-End developer.</p>
+                <h2><i class="fa fa-briefcase"></i>Qualifications Summary</h2>
+                <div class="about__me-qualifications">
+                  <div class="diplomas">
+                    <h3>Diplomas</h3>
+                    <ul>
+                      <li>Masters Degree - Mechanical Engineering</li>
+                      <li>English Translator</li>
+                    </ul>
+                  </div>
+                  <div class="certificates">
+                    <h3 class="certificates">Certificates</h3>
+                    <ul>
+                      <li>TESOL - English Teacher</li>
+                      <li>RS School - JS Front-End S0</li>
+                  </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="main__it-experience">
+            <div class="section-container">
+              <h2><i class="fa fa-laptop"></i>IT Experience</h2>
+              <h3>Hard Skills</h3>
+              <ul>
+                <li>Git</li>
+                <li>HTML + CSS + JS</li>
+                <li>Figma</li>
+              </ul>
+            </div>
+          </section>
+          <section class="main__code-example">
+            <div class="section-container">
+              <div class="code-example">
+                <h3>Examples of Code</h3>
+                <code class="code">
+                  function revrot(str, sz) {
 
+                  if (!str || !sz || sz > str.length) return ''
+                  const strChunkArr = chunkString(str, sz)
+                  const checkedArr = strChunkArr
+                  .map(el => sumCubes(el, sz))
+                  console.log('strChunkArr', strChunkArr)
+                  return checkedArr.join('')
+                  }
+
+
+                  function chunkString(str, length) {
+                  return str.match(new RegExp('.{1,' + length + '}', 'g'));
+                  }
+
+
+                  function sumCubes(str, sz) {
+                  console.log('\nsumCubes', str, sz)
+                  if (str.length < sz) return ''
+                    // console.log(Array.from(str))
+                    const reduced=Array.from(str).reduce((acc, el)=> acc + Math.pow(parseInt(el), 3), 0)
+                    // console.log('reduced', reduced)
+                    return reduced % 2 === 0 ? Array.from(String(str), Number).reverse().join('') : str.slice(1) + str.slice(0, 1)
+                    }
+
+                </code>
+              </div>
+            </div>
+          </section>
+          <section class="main__previous-work">
+            <div class="section-container"></div>
+          </section>
+          <section class="main__education">
+            <div class="section-container"></div>
+          </section>
+          <section class="main__languages">
+            <div class="section-container"></div>
+          </section>
         </div>
       </main>
     </div>

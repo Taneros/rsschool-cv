@@ -32,7 +32,7 @@ body {
 /* ------HEADER------- */
 
 .header {
-  width: 100vw;
+  background-color: lightcyan;
 }
 .header__container {
   display: flex;
@@ -42,6 +42,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: lightseagreen;
 }
 
 .header__name {
@@ -111,13 +114,133 @@ letter-spacing: 0.1rem;
 }
 
 
+.main__container {
+  margin: 0 auto;
+  max-width: 900px;
+  background-color: lightcoral;
+  height: 1500px;
+}
+
+/* --------About Me--------- */
+
+.main__container i {
+  margin-right: 2rem;
+  width: 16px;
+  font-size: 1.5rem;
+}
+
+section { 
+  margin-top: 5vw;
+}
+
+.main__about-me .section-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about__me-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+  margin-bottom: 0.6rem;
+  background-color: lawngreen;
+  padding: 10px 0;
+  box-shadow: 12px 14px 32px -6px rgba(0,0,0,0.81);
+-webkit-box-shadow: 12px 14px 32px -6px rgba(0,0,0,0.81);
+-moz-box-shadow: 12px 14px 32px -6px rgba(0,0,0,0.81);
+
+}
+
+.about__me-card > * + * {
+  margin-top: 0.6rem;
+}
+
+  .card__photo {
+}
+
+.card__photo > img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 10px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+.card__name {
+  font-weight: 700;
+}
+.card__job {
+  font-size: 1.3em;
+
+}
+.card__contacts {
+}
+
+.card__contacts i {
+  margin-right: 1rem;
+  width: 16px;
+}
+
+.about__me-summary {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about__me-summary > * + * {
+  margin-top: 0.6rem;
+}
+
+.about__me-summary p {
+  text-align: justify;
+}
 
 
 
+.about__me-qualifications {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr ; */
+  display: flex;
+  flex-direction: row;
+}
+
+.about__me-qualifications div {
+  padding: 0 0.3rem 0 0.3rem;
+}
+
+.about__me-qualifications div ul {
+  margin-top: 0.5rem;
+}
+
+
+/* -----IT Experience----- */
+.main__it-experience {
+
+}
+.main__it-experience .section-container > * + * {
+    margin-top: 0.6rem;
+}
+.section-container {
+}
 
 /* ------@media-------- */
 
 @media screen and (max-width: 800px) {
+  
+  /* ----@m Header----- */
   .header__container {
   }
   .header__menu {
@@ -147,7 +270,19 @@ letter-spacing: 0.1rem;
   .header__hamburger {
     display: block;
   }
+
+  /* -------@m About me------------- */
+  .main__about-me.section-container {
+    
+  }
+.main__about-me .section-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
+
+
 
 @media screen and (min-width: 770px) {
   .header__container {
