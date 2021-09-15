@@ -1,3 +1,5 @@
+// hljs.highlightAll()
+
 const hamburger = document.getElementById('hamburger')
 const hamburgerI = document.getElementById('hamburger-i')
 

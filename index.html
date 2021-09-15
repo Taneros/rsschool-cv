@@ -14,6 +14,10 @@
     <!-- Font Awesome ver. 4 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="assets/js/index.js" defer></script>
+    <!-- Highlight JS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </head>
 
   <body>
@@ -94,46 +98,59 @@
           <section class="main__it-experience">
             <div class="section-container">
               <h2><i class="fa fa-laptop"></i>IT Experience</h2>
-              <h3>Hard Skills</h3>
-              <ul>
-                <li>Git</li>
-                <li>HTML + CSS + JS</li>
-                <li>Figma</li>
-              </ul>
+              <div class="it-experience">
+                <div class="it-experience__tech-skills">
+                  <h3>Technical Skills</h3>
+                  <ul>
+                    <li>&#10004; Git</li>
+                    <li>&#10004; HTML</li>
+                    <li>&#10004; CSS</li>
+                    <li>&#10004; JavaScript</li>
+                    <li>&#10004; Figma</li>
+                  </ul>
+                </div>
+                <div class="it-experience__code-example">
+                  <h3>Examples of Code</h3>
+                  <pre>
+<code class="code language-javascript">function solution(number) {
+const multiArr = []
+for (let i = 3; i < number; i++) {
+  // console.log(i)
+  if (i % 3===0) multiArr.push(i)
+  else if (i % 5===0) multiArr.push(i)
+  }
+  return multiArr.reduce((acc, el)=> acc + el, 0)
+  }</code></pre>
+                </div>
+                <div class="it-experience__my-projects">
+                  <div class="my-projects">
+                    <h3>My Projects</h3>
+                    <div class="projects">
+                      <div class="slider">
+                        <div class="slider-image">
+                          <a href="https://rolling-scopes-school.github.io/taneros-JSFEPRESCHOOL/vertical-slider/" target="_blank">
+                            <img src="assets/img/slider.png" alt="Museum Louvre">
+                          </a>
+                        </div>
+                        <h4 class="project-title">Infinite slider</h4>
+                        <p>HTML, CSS, JavaScript</p>
+                      </div>
+                      <div class="museum">
+                        <div class="museum-image">
+                          <a href="https://rolling-scopes-school.github.io/taneros-JSFEPRESCHOOL/museum/" target="_blank">
+                            <img src="assets/img/museum.png" alt="Infinite Slider"></a>
+                        </div>
+                        <h4>Museum Landing Page</h4>
+                        <p>HTML, CSS, JavaScript</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
-          <section class="main__code-example">
+          <section class="main_">
             <div class="section-container">
-              <div class="code-example">
-                <h3>Examples of Code</h3>
-                <code class="code">
-                  function revrot(str, sz) {
-
-                  if (!str || !sz || sz > str.length) return ''
-                  const strChunkArr = chunkString(str, sz)
-                  const checkedArr = strChunkArr
-                  .map(el => sumCubes(el, sz))
-                  console.log('strChunkArr', strChunkArr)
-                  return checkedArr.join('')
-                  }
-
-
-                  function chunkString(str, length) {
-                  return str.match(new RegExp('.{1,' + length + '}', 'g'));
-                  }
-
-
-                  function sumCubes(str, sz) {
-                  console.log('\nsumCubes', str, sz)
-                  if (str.length < sz) return ''
-                    // console.log(Array.from(str))
-                    const reduced=Array.from(str).reduce((acc, el)=> acc + Math.pow(parseInt(el), 3), 0)
-                    // console.log('reduced', reduced)
-                    return reduced % 2 === 0 ? Array.from(String(str), Number).reverse().join('') : str.slice(1) + str.slice(0, 1)
-                    }
-
-                </code>
-              </div>
             </div>
           </section>
           <section class="main__previous-work">

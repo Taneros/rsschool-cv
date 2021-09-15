@@ -63,7 +63,7 @@ letter-spacing: 0.1rem;
 }
 .menu__list {
   display: flex;
-  gap: 10px;
+  gap: 2em;;
   list-style-type: none;
 
 }
@@ -148,6 +148,7 @@ section {
   margin-bottom: 0.6rem;
   background-color: lawngreen;
   padding: 10px 0;
+  border-radius: 10px;
   box-shadow: 12px 14px 32px -6px rgba(0,0,0,0.81);
 -webkit-box-shadow: 12px 14px 32px -6px rgba(0,0,0,0.81);
 -moz-box-shadow: 12px 14px 32px -6px rgba(0,0,0,0.81);
@@ -227,14 +228,156 @@ h3 {
 
 
 /* -----IT Experience----- */
+
+
 .main__it-experience {
+  
+}
+.main__it-experience h2 {
+  margin-bottom: 0.6em;
+}
+
+.section-container {
 
 }
-.main__it-experience .section-container > * + * {
-    margin-top: 0.6rem;
+
+.it-experience > * + * {
+    /* margin-top: 2rem; */
 }
-.section-container {
+
+.it-experience {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
 }
+
+
+.it-experience__tech-skills > * + * {
+margin-top: 0.6rem;
+}
+
+.it-experience__tech-skills {
+  min-width: 20%;
+  background-color: brown;
+  padding: 0.6em;
+  border-radius: 10px;
+
+}
+
+.it-experience__tech-skills ul {
+  margin: 0.6em;
+}
+
+.it-experience__tech-skills ul > * + * {
+  margin-top: 0.6em;
+
+}
+
+.it-experience__code-example > * + * {
+  margin-top: 1rem;
+}
+
+.it-experience__code-example {
+  width: auto;
+  background-color: brown;
+  padding: 0.6em;
+  border-radius: 10px;
+}
+
+.it-experience__code-example .code {
+  /* display: block; */
+  /* margin: 0 auto; */
+  margin: 0.5em;
+  background-color: beige;
+  /* padding: .5em; */
+}
+
+code, pre, pre code {
+  white-space: pre-wrap;
+  word-break: break-all;
+  border-radius: 4px;
+}
+
+.it-experience__my-projects {
+  margin-top: 2em;
+}
+
+/* - my projects - */
+
+.my-projects {
+  background-color: brown;
+  max-width: 100%;
+  border-radius: 10px;
+  padding: 0.6em;
+}
+
+h4 {
+  margin-top: 1em;
+  font-weight: 500;
+}
+
+.it-experience__my-projects .projects > * + * {
+margin-top: 1rem;
+}
+
+
+.it-experience__my-projects .projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  min-width: 720px;
+}
+
+/* - slider - */
+
+.it-experience__my-projects .slider {
+  width: 300px;
+}
+
+.it-experience__my-projects .slider-image {
+  max-width: 100%;
+  background-color: azure;
+  background-size: cover;
+}
+
+.slider-image {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.slider-image img {
+  /* width: 100%; */
+  height: 200px;
+  background-size: contain;
+}
+
+/* -museum- */
+.it-experience__my-projects .museum {
+  width: 300px;
+  /* max-height: 150px; */
+}
+
+.it-experience__my-projects .museum-image {
+  max-width: 100%;
+  background-color: azure;
+  background-size: cover;
+}
+
+.museum-image {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.museum-image img {
+  /* min-height: 200px; */
+  /* width: 130%; */
+  height: 200px;
+  background-size: contain;
+}
+
+
 
 /* ------@media-------- */
 
@@ -256,7 +399,6 @@ h3 {
     /* margin: 0 0 0 calc(55%); */
     top: 70px;
     right: 5vw;
-
   }
   
   .menu__list {
@@ -279,6 +421,24 @@ h3 {
     flex-direction: column;
     align-items: center;
   }
+
+  /* ------@m it-experience */
+
+.it-experience > * + * {
+  margin-top: 1rem;
+}
+
+  /* ---------@m my projects ------- */
+
+  .it-experience__my-projects .projects {
+  margin-top: 1rem;
+}
+
+  .it-experience__my-projects .projects {
+  /* flex-wrap: wrap; */
+  align-content: center;
+  min-width: auto;
+}
 
 }
 
