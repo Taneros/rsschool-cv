@@ -118,7 +118,7 @@ letter-spacing: 0.1rem;
   margin: 0 auto;
   max-width: 900px;
   background-color: lightcoral;
-  height: 1500px;
+  /* height: 1500px; */
 }
 
 /* --------About Me--------- */
@@ -318,7 +318,7 @@ h4 {
 }
 
 .it-experience__my-projects .projects > * + * {
-margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 
@@ -378,6 +378,166 @@ margin-top: 1rem;
 }
 
 
+/* -------- Previous work experience ------- */
+
+.main__previous-work h2 {
+  margin-bottom: 0.6em;
+}
+
+.main__previous-work {
+
+}
+.section-container {
+
+}
+
+.previous-work > * + * {
+  
+  margin-top: 1rem;
+  
+}
+.previous-work {
+  margin: 0 auto;
+  background-color: brown;
+  max-width: 736px;
+  border-radius: 10px;
+  padding: 0.6em;
+  
+}
+
+.previous-work ul li {
+
+  line-height: 2em;
+  list-style-type: circle;
+  margin-left: 15px;
+
+}
+
+
+/* -------Higher Education -------- */
+
+
+
+.main__education {
+
+}
+
+.main__education h2 {
+  margin-bottom: 0.6em;
+}
+
+.section-container {
+
+}
+
+.education {
+  margin: 0 auto;
+  background-color: brown;
+  max-width: 736px;
+  border-radius: 10px;
+  padding: 0.6em;
+  
+}
+
+.education > * + * {
+  margin-top: 1rem;
+}
+.education ul li {
+
+  line-height: 2em;
+  list-style-type: circle;
+  margin-left: 15px;
+
+}
+
+/* -------Languages ------ */
+
+
+.main__languages {
+}
+.main__languages h2 {
+  margin-bottom: 0.6em;
+}
+
+.section-container {
+}
+
+.languages {
+  margin: 0 auto;
+  background-color: brown;
+  max-width: 736px;
+  border-radius: 10px;
+  padding: 0.6em;
+  
+}
+
+.languages > * + * {
+  margin-top: 1rem;
+}
+
+.languages ul li {
+
+  line-height: 2em;
+  list-style-type: circle;
+  margin-left: 15px;
+
+}
+
+/* ------- Footer ------- */
+
+footer {
+    /* height: 50px; */
+    /* text-align: center; */
+    padding: 10px 0;
+    background-color: beige;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .github {
+  margin-left: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #2B2741;
+}
+
+footer a i {
+  margin-right: 0.5em;
+}
+
+footer img {
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-size: contain;
+}
+
+footer .rss-logo {
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ------@media-------- */
 
@@ -417,10 +577,12 @@ margin-top: 1rem;
   .main__about-me.section-container {
     
   }
+
 .main__about-me .section-container {
     flex-direction: column;
     align-items: center;
   }
+
 
   /* ------@m it-experience */
 
@@ -439,10 +601,7 @@ margin-top: 1rem;
   align-content: center;
   min-width: auto;
 }
-
 }
-
-
 
 @media screen and (min-width: 770px) {
   .header__container {
