@@ -2,9 +2,10 @@
 
 :root {
   --font-size: 1rem;
-  --first-color: #7fa99b;
+  --first-color: #e6f7f7;
   --second-color: #fbf2d5;
   --third-color: #fdc57b;
+  --forth-color: #44558f;
   --box-shadow-main: 12px 14px 32px -6px rgba(0, 0, 0, 0.81);
   -webkit-box-shadow: 12px 14px 32px -6px rgba(0, 0, 0, 0.81);
   -moz-box-shadow: 12px 14px 32px -6px rgba(0, 0, 0, 0.81);
@@ -48,8 +49,13 @@ section:last-child {
 /* ------HEADER------- */
 
 .header {
-  background: var(--third-color);
+  background: var(--forth-color);
 }
+
+.header * {
+  color: var(--second-color);
+}
+
 .header__container {
   display: flex;
   position: relative;
@@ -88,12 +94,23 @@ section:last-child {
   display: inline-block;
   color: black;
   text-decoration: none;
+  color: var(--second-color);
 }
 
 .menu__item:hover {
   background: var(--second-color);
-  /* background: red; */
   box-shadow: var(--box-shadow-sm);
+  color: var(--forth-color);
+}
+
+.menu a {
+  display: block;
+  height: auto;
+}
+
+.menu__item:hover a {
+  color: var(--forth-color);
+  /* color: #44558f; */
 }
 
 /* -----HAMBURGER MENU------- */
@@ -559,8 +576,9 @@ h4 {
 footer {
   /* height: 50px; */
   /* text-align: center; */
-  padding: 10px 0;
-  background: var(--third-color);
+  padding: 10px;
+  background: var(--forth-color);
+  color: var(--second-color);
 }
 
 .footer-container {
@@ -570,12 +588,12 @@ footer {
 }
 
 footer .github {
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 footer a {
   text-decoration: none;
-  color: #2b2741;
+  color: var(--second-color);
 }
 
 footer a i {
@@ -587,10 +605,16 @@ footer img {
   height: 50px;
   width: 50px;
   background-size: contain;
+  /* fill-opacity: var(--second-color); */
+}
+
+footer svg path {
+  /* fill: var(--second-color); */
+  /* color: red; */
 }
 
 footer .rss-logo {
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 /* ------@media-------- */
@@ -620,11 +644,15 @@ footer .rss-logo {
   .menu__list.show {
     display: flex;
     flex-direction: column;
-    background-color: bisque;
+    background: var(--second-color);
     opacity: 0.9;
     padding: 20px;
     width: 150px;
     border-radius: 5px;
+  }
+
+  .menu__list.show a {
+    color: #44558f;
   }
 
   .header__hamburger {
