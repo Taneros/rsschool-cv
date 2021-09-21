@@ -409,12 +409,11 @@ h4 {
 /* - slider - */
 
 .it-experience__my-projects .slider {
-  width: 300px;
+  min-width: 300px;
 }
 
 .it-experience__my-projects .slider-image {
   max-width: 100%;
-  background-color: azure;
   background-size: cover;
 }
 
@@ -432,7 +431,7 @@ h4 {
 /* -museum- */
 
 .it-experience__my-projects .museum {
-  width: 300px;
+  min-width: 300px;
   /* max-height: 150px; */
 }
 
@@ -668,6 +667,9 @@ footer .rss-logo {
     flex-direction: column;
     align-items: center;
   }
+  .about__me-summary {
+    margin-left: 0;
+  }
 
   /* ------@m it-experience */
 
@@ -699,5 +701,40 @@ footer .rss-logo {
   .it-experience__tech-skills,
   .it-experience__code-example {
     min-width: 100%;
+  }
+
+  .it-experience__my-projects .museum,
+  .it-experience__my-projects .slider {
+    min-width: 200px;
+  }
+
+  .slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider-image img {
+    display: inline-block;
+    height: 150px;
+    background-size: contain;
+  }
+
+  .museum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .museum-image img {
+    /* width:80%; */
+    height: 120px;
+    background-size: contain;
+  }
+
+  .projects > * + * {
+    margin-left: 0;
   }
 }
